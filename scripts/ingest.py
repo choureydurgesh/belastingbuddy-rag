@@ -1,5 +1,6 @@
 from pathlib import Path
 import chromadb
+from pypdf import PdfReader
 
 BASE = Path(__file__).resolve().parents[1]
 RAW_DIR = BASE / "data" / "raw"
@@ -19,10 +20,28 @@ def chunk_text(text, chunk_size=220, overlap=40):
         start = max(0, end - overlap)
     return [c for c in chunks if c]
 
+def extract_text_from_pdf(pdf_path: Path) -> str:
+    reader = PdfReader(pdf_path)
+    text_parts = []
+    for page in reader.pages:
+        extracted = page.extract_text()
+        if extracted:
+            text_parts.append(extracted)
+    return "\n".join(text_parts).strip()
+
 ids, docs, metas = [], [], []
 
-for path in sorted(RAW_DIR.glob("*.txt")):
-    text = path.read_text(encoding="utf-8").strip()
+# Scan for both TXT and PDF files in the raw data directory
+files = sorted(list(RAW_DIR.glob("*.txt")) + list(RAW_DIR.glob("*.pdf")))
+
+for path in files:
+    if path.suffix == ".txt":
+        text = path.read_text(encoding="utf-8").strip()
+    elif path.suffix == ".pdf":
+        text = extract_text_from_pdf(path)
+    else:
+        continue
+
     for i, chunk in enumerate(chunk_text(text)):
         ids.append(f"{path.stem}-{i}")
         docs.append(chunk)
@@ -45,3 +64,4 @@ if ids:
         collection.add(ids=new_ids, documents=new_docs, metadatas=new_metas)
 
 print(f"Collection count: {collection.count()}")
+
