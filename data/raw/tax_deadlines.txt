@@ -1,1 +1,15 @@
-Dutch income tax returns for individuals are generally filed annually. Users should gather income statements, mortgage information if relevant, bank details, and deductible expense records before starting. Filing usually happens through the online tax portal, and users should verify the current year deadlines from official guidance before submission.
+Dutch Income Tax Filing Deadlines and Extensions:
+
+1. Standard Resident Tax Return (P-form) Deadline:
+The standard deadline for residents to file their annual Dutch income tax return is May 1st of the year following the tax year (for example, for tax year 2025, the filing deadline is May 1, 2026).
+
+2. Migration Tax Return (M-form) Deadline:
+For individuals who immigrated to or emigrated from the Netherlands during the tax year, the filing deadline is July 1st of the year following the tax year (for example, for tax year 2025, the deadline is July 1, 2026).
+
+3. Extensions (Uitstel):
+If you need more time to prepare your return, you can request an extension (uitstel) from the Belastingdienst before the initial deadline.
+- Standard Extensions: A basic extension can typically be requested online or by calling the Belastingdienst, which extends the deadline by 4 months (usually to September 1st).
+- Tax Adviser Extensions: Professional tax advisers can secure longer extensions for their clients (often until May 1st of the subsequent year).
+
+4. Consequences of Late Filing:
+Failing to file your tax return on time without an approved extension can result in a default penalty (verzuimboete) starting at several hundred euros, and the Belastingdienst may charge tax interest (belastingrente) on any outstanding tax liabilities.

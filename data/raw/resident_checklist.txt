@@ -1,0 +1,30 @@
+Dutch Resident Income Tax Filing Document Checklist:
+
+Gather the following documents and information before starting your annual tax return (P-form) on the Mijn Belastingdienst portal:
+
+1. Personal Information:
+- DigiD: Secure login details for yourself and your fiscal partner.
+- Citizen Service Number (BSN): Required for you, your tax partner, and any dependent children.
+- Bank Account (IBAN): Needed for tax refunds or direct debit payments.
+
+2. Income Documentation:
+- Annual Income Statement (Jaaropgave): Provided by your employers for all jobs held during the tax year.
+- Alimony/Spousal Support: Documentation of any support payments received from an ex-partner.
+- Other Income: Details of business income, freelancing, or pension benefits.
+
+3. Housing and Real Estate (Primary Residence):
+- WOZ-waarde (WOZ value): The municipal valuation of your primary residence, determined on January 1st of the previous year (shown on your annual municipal tax bill).
+- Mortgage Statement (Jaaropgave Hypotheek): Detailing the outstanding mortgage balance and interest paid during the tax year.
+- Notary Settlement Sheet (Notarisafrekening): If you bought or sold your home during the tax year.
+
+4. Savings and Investments (Box 3 Assets):
+- Bank Statements: Showing bank and savings account balances (domestic and foreign) as of January 1st.
+- Investment Portfolios: Annual statements showing values of stocks, bonds, and mutual funds as of January 1st.
+- Cryptocurrencies: Value of all crypto assets held on January 1st.
+- Debts and Loans: Personal loans or other debts that can be deducted from your Box 3 taxable assets.
+
+5. Deductible Expenses (Keep proof of payments):
+- Medical Expenses: Out-of-pocket healthcare costs not covered by compulsory or voluntary health insurance (excluding deductible excess/eigen risico).
+- Charitable Donations: Donations made to approved cultural or general public benefit organizations (ANBI).
+- Spousal Support Paid: Payments made to a former spouse.
+- Private Pension Premiums: Premium payments for annuities (lijfrente) or disability insurance (AOV).

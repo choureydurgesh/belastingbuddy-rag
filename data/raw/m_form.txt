@@ -1,1 +1,19 @@
-The M-form is relevant for migration-year tax situations, such as moving to or from the Netherlands during the tax year. Users in migration-year cases may need special filing guidance, additional supporting information, and extra care in determining the period of Dutch tax residency.
+Migration-Year Dutch Tax Return (M-Form) Guide:
+
+1. What is the M-form?
+The M-form (Migration Form) is the tax return form used for the calendar year in which you immigrated to or emigrated from the Netherlands. If you did not live in the Netherlands for the full calendar year due to moving, you must file an M-form.
+
+2. Purpose and Split Residency:
+Because your residency status changed mid-year, the M-form splits your tax year into two distinct parts:
+- Resident Period: You are taxed on your worldwide income for the period you were registered in the Netherlands.
+- Non-Resident Period: You are only taxed on specific Dutch-sourced income (such as Dutch employment or real estate) for the period you lived abroad.
+
+3. Migration Date:
+Your official migration date is determined by the date you registered at a Dutch municipality (Gemeente) upon arrival, or the date you de-registered upon leaving. You will need to provide this exact date on your M-form.
+
+4. Filing Methods:
+- Online Filing: You can file your M-form digitally on the official Belastingdienst portal (Mijn Belastingdienst) using your DigiD login credentials.
+- Paper Filing: If digital filing is not possible (e.g. if you do not have a DigiD), you can order a physical paper M-form booklet from the Belastingdienst, which will be mailed to your address.
+
+5. Complexity and Language:
+The M-form is notably more complex than a standard resident return (P-form) and is only available in the Dutch language. Expats with foreign income, housing, or assets frequently work with tax advisers to ensure compliance and request treaty reliefs correctly.
