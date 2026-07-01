@@ -1,27 +1,35 @@
-# Architecture
+# Architecture – BelastingBuddy
 
-# Overview
-BelastingBuddy uses a RAG architecture with document ingestion, chunking, embeddings, retrieval, LLM response generation, and answer citations.
+BelastingBuddy is built on a modular Retrieval-Augmented Generation (RAG) architecture running entirely in a local environment.
 
-# Components
-- Chat UI
-- Backend API
-- Document ingestion pipeline
-- Chunk store / vector database
-- LLM runtime
-- Logging and feedback storage
+```mermaid
+graph TD
+    A[Raw Files: txt, pdf] -->|Ingestion: ingest.py| B(Chroma Vector Store)
+    C[User Request] -->|POST /ask| D(FastAPI Backend)
+    D -->|Query| B
+    B -->|Retrieved Context| D
+    D -->|Grounded Prompt| E(Ollama: qwen2.5-coder:1.5b)
+    E -->|Generated Answer| D
+    D -->|Response with Citations| C
+```
 
-# Flow
-1. Source documents are collected and normalized.
-2. Documents are chunked and embedded.
-3. Chunks are stored with metadata.
-4. User sends a question.
-5. Retriever selects relevant chunks.
-6. LLM answers using retrieved context.
-7. UI shows answer and citations.
-8. Feedback and logs are stored.
+## System Components
 
-# Future additions
-- Access control by user type
-- Better source freshness checks
-- Evaluation dataset
+### 1. Ingestion Pipeline
+* **Script**: [ingest.py](file:///Users/durgeshchourey/Documents/rag-project/belastingbuddy-rag/scripts/ingest.py)
+* **Responsibility**: Scans for files, extracts text (using `pypdf` for PDFs), splits text into chunks, and populates the database.
+
+### 2. Vector Database
+* **Database**: ChromaDB (Persistent client)
+* **Responsibility**: Indexes document chunks and matches search queries using semantic similarity.
+
+### 3. FastAPI Web Server
+* **Server**: FastAPI [main.py](file:///Users/durgeshchourey/Documents/rag-project/belastingbuddy-rag/app/main.py)
+* **Endpoints**:
+  * `GET /`: Health and welcome message.
+  * `GET /health`: Detailed status including Chroma DB collection count.
+  * `POST /ask`: Performs vector search, creates a grounded prompt, calls Ollama, and returns the generated answer alongside citations.
+
+### 4. LLM Runtime
+* **Runtime**: Ollama
+* **Model**: `qwen2.5-coder:1.5b` (running locally)

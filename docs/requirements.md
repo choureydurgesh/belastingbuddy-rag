@@ -33,17 +33,18 @@ Provide clear, source-grounded, non-legal guidance for Dutch tax filing question
 - Personalized tax outcome prediction
 
 #8. Functional requirements
-- Upload and manage trusted documents
+- Upload and manage trusted documents in Plain Text (.txt) and PDF (.pdf) formats
 - Answer questions with citations
 - Show source title and excerpt
 - Maintain conversation history per session
 - Capture feedback on answers
 
 #9. Non-functional requirements
-- Secure handling of uploaded content
-- Fast enough for interactive use
-- Explainable answers with sources
+- Secure, local-only handling of uploaded content (GDPR compliant)
+- Fast enough for interactive use (under 3 seconds per query locally)
+- Explainable answers with source grounding
 - Logging and traceability
+- Automated unit/integration test coverage (>80% of backend and helper functions)
 
 #10. Success metrics
 - Answer grounding rate

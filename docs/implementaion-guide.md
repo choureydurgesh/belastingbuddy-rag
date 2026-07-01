@@ -165,10 +165,18 @@ python scripts/query.py "What documents are needed before filing Dutch income ta
 python scripts/ask.py "What documents are needed before filing Dutch income tax?"
 ```
 
+## Running Tests
+
+To verify that the ingestion and backend API routing are working correctly, run the automated test suite:
+
+```bash
+pytest tests/
+```
+
 ## Next steps
 
-After the first local RAG flow works, the best next steps are:
+After the local RAG flow and FastAPI backend are working, the next steps are:
 
 - Improve chunking and metadata quality for better retrieval.
-- Add real official Dutch tax documents instead of starter sample files.
-- Wrap `ask.py` behind a small FastAPI backend for a custom UI or Open WebUI integration.
+- Add real official Dutch tax documents (TXT or PDF formats) to `data/raw/` instead of starter sample files.
+- Build or connect a custom frontend to the FastAPI `/ask` endpoint (or use Open WebUI).
